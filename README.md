@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StockScreener - AI-Powered Options Analysis
 
-## Getting Started
+A beautiful and elegant web application for screening options strategies, with a focus on put credit spreads and naked puts. Features real-time market data, comprehensive news analysis, and automated daily briefs.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Options Screener**: Find 30-45 DTE put credit spreads with target delta (0.20-0.30)
+- **Daily Market Brief**: Comprehensive morning briefing with economic calendar and news sentiment
+- **Financial News**: Curated headlines from major sources with sentiment analysis
+- **Ticker Analysis**: Detailed stock information and options chain data
+- **Beautiful UI**: Modern, responsive design with dark mode
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js 15 + TypeScript
+- **UI**: Tailwind CSS + shadcn/ui components
+- **Icons**: Lucide React
+- **State Management**: React hooks
+- **Styling**: CSS variables with dark mode support
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation
 
-## Learn More
+1. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   pnpm dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 How to Use
 
-## Deploy on Vercel
+### 1. Homepage
+- Landing page with feature overview
+- Quick access to screener and market brief
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. Options Screener
+- Set your screening criteria (price range, target delta, etc.)
+- Run the screener to find opportunities
+- View detailed results with scoring and sentiment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Daily Market Brief
+- Get comprehensive market overview
+- Check economic calendar for high-impact events
+- Review news sentiment and market conditions
+
+### 4. Financial News
+- Browse headlines from major financial sources
+- Filter by source, category, or search terms
+- View sentiment analysis and ticker mentions
+
+### 5. Ticker Analysis
+- Click "View" on any screener result
+- See comprehensive stock information
+- Analyze options chain for put credit spreads
+- Get strategy recommendations
+
+## 🔧 Development
+
+The app is built with a component-based architecture:
+
+- **UI Components**: Reusable components in `src/components/ui/`
+- **Layout Components**: Navigation and structure in `src/components/layout/`
+- **Pages**: Main application pages in `src/app/`
+- **Utilities**: Helper functions in `src/lib/utils.ts`
+
+## 🎨 Design System
+
+- **Color Scheme**: Dark mode with blue/purple accent colors
+- **Typography**: Inter font family with proper hierarchy
+- **Components**: Consistent card layouts and interactive elements
+- **Responsive**: Mobile-first design with responsive breakpoints
+
+## 🚧 Current Status
+
+This is a **fully functional frontend prototype** with:
+- ✅ Complete UI/UX implementation
+- ✅ Mock data for demonstration
+- ✅ Responsive design
+- ✅ Navigation between all pages
+- ✅ Component library
+
+**Next Steps for Production:**
+- Integrate real market data APIs
+- Add backend services
+- Implement real-time updates
+- Add user preferences and watchlists
+
+## 📱 Browser Support
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+MIT License - see LICENSE file for details
+
+---
+
+**Ready to start screening options?** 🎯
+
+Run `npm run dev` and navigate to the screener to find your next trading opportunity!
