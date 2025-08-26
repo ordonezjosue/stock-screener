@@ -1,0 +1,21 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/hourly",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/premarket",
+      "schedule": "0 8 * * 1-5"
+    },
+    {
+      "path": "/api/cron/postclose",
+      "schedule": "0 17 * * 1-5"
+    }
+  ],
+  "functions": {
+    "src/app/api/cron/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
+}
